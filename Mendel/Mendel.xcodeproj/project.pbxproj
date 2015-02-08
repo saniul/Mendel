@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7572EF6E1A6E4668008667AF /* Mendel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7572EF6D1A6E4668008667AF /* Mendel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7572EF741A6E4668008667AF /* Mendel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7572EF681A6E4668008667AF /* Mendel.framework */; };
+		7572EF7B1A6E4668008667AF /* MendelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF7A1A6E4668008667AF /* MendelTests.swift */; };
+		7572EF9B1A6E46D0008667AF /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF8D1A6E46C0008667AF /* Engine.swift */; };
+		7572EF9C1A6E46D0008667AF /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF8E1A6E46C0008667AF /* Selection.swift */; };
+		7572EF9D1A6E46D0008667AF /* Termination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF8F1A6E46C0008667AF /* Termination.swift */; };
+		7572EF9E1A6E46D0008667AF /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF901A6E46C0008667AF /* Operators.swift */; };
+		7572EF9F1A6E46D0008667AF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF911A6E46C0008667AF /* Utilities.swift */; };
+		7572EFA01A6E46D0008667AF /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF921A6E46C0008667AF /* Stats.swift */; };
+		7572EFA11A6E46D0008667AF /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572EF931A6E46C0008667AF /* Dice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7572EF751A6E4668008667AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7572EF5F1A6E4668008667AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7572EF671A6E4668008667AF;
+			remoteInfo = Mendel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7572EF681A6E4668008667AF /* Mendel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mendel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7572EF6C1A6E4668008667AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7572EF6D1A6E4668008667AF /* Mendel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mendel.h; sourceTree = "<group>"; };
+		7572EF731A6E4668008667AF /* MendelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MendelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7572EF791A6E4668008667AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7572EF7A1A6E4668008667AF /* MendelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MendelTests.swift; sourceTree = "<group>"; };
+		7572EF8D1A6E46C0008667AF /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		7572EF8E1A6E46C0008667AF /* Selection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		7572EF8F1A6E46C0008667AF /* Termination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Termination.swift; sourceTree = "<group>"; };
+		7572EF901A6E46C0008667AF /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		7572EF911A6E46C0008667AF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7572EF921A6E46C0008667AF /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		7572EF931A6E46C0008667AF /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7572EF641A6E4668008667AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7572EF701A6E4668008667AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7572EF741A6E4668008667AF /* Mendel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7572EF5E1A6E4668008667AF = {
+			isa = PBXGroup;
+			children = (
+				7572EF6A1A6E4668008667AF /* Mendel */,
+				7572EF771A6E4668008667AF /* MendelTests */,
+				7572EF691A6E4668008667AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7572EF691A6E4668008667AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7572EF681A6E4668008667AF /* Mendel.framework */,
+				7572EF731A6E4668008667AF /* MendelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7572EF6A1A6E4668008667AF /* Mendel */ = {
+			isa = PBXGroup;
+			children = (
+				7572EF8D1A6E46C0008667AF /* Engine.swift */,
+				7572EF8E1A6E46C0008667AF /* Selection.swift */,
+				7572EF8F1A6E46C0008667AF /* Termination.swift */,
+				7572EF901A6E46C0008667AF /* Operators.swift */,
+				7572EF921A6E46C0008667AF /* Stats.swift */,
+				7572EF931A6E46C0008667AF /* Dice.swift */,
+				7572EF911A6E46C0008667AF /* Utilities.swift */,
+				7572EF6D1A6E4668008667AF /* Mendel.h */,
+				7572EF6B1A6E4668008667AF /* Supporting Files */,
+			);
+			path = Mendel;
+			sourceTree = "<group>";
+		};
+		7572EF6B1A6E4668008667AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7572EF6C1A6E4668008667AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7572EF771A6E4668008667AF /* MendelTests */ = {
+			isa = PBXGroup;
+			children = (
+				7572EF7A1A6E4668008667AF /* MendelTests.swift */,
+				7572EF781A6E4668008667AF /* Supporting Files */,
+			);
+			path = MendelTests;
+			sourceTree = "<group>";
+		};
+		7572EF781A6E4668008667AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7572EF791A6E4668008667AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7572EF651A6E4668008667AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7572EF6E1A6E4668008667AF /* Mendel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7572EF671A6E4668008667AF /* Mendel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7572EF7E1A6E4668008667AF /* Build configuration list for PBXNativeTarget "Mendel" */;
+			buildPhases = (
+				7572EF631A6E4668008667AF /* Sources */,
+				7572EF641A6E4668008667AF /* Frameworks */,
+				7572EF651A6E4668008667AF /* Headers */,
+				7572EF661A6E4668008667AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mendel;
+			productName = Mendel;
+			productReference = 7572EF681A6E4668008667AF /* Mendel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7572EF721A6E4668008667AF /* MendelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7572EF811A6E4668008667AF /* Build configuration list for PBXNativeTarget "MendelTests" */;
+			buildPhases = (
+				7572EF6F1A6E4668008667AF /* Sources */,
+				7572EF701A6E4668008667AF /* Frameworks */,
+				7572EF711A6E4668008667AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7572EF761A6E4668008667AF /* PBXTargetDependency */,
+			);
+			name = MendelTests;
+			productName = MendelTests;
+			productReference = 7572EF731A6E4668008667AF /* MendelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7572EF5F1A6E4668008667AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Saniul Ahmed";
+				TargetAttributes = {
+					7572EF671A6E4668008667AF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					7572EF721A6E4668008667AF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 7572EF621A6E4668008667AF /* Build configuration list for PBXProject "Mendel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7572EF5E1A6E4668008667AF;
+			productRefGroup = 7572EF691A6E4668008667AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7572EF671A6E4668008667AF /* Mendel */,
+				7572EF721A6E4668008667AF /* MendelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7572EF661A6E4668008667AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7572EF711A6E4668008667AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7572EF631A6E4668008667AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7572EF9C1A6E46D0008667AF /* Selection.swift in Sources */,
+				7572EF9E1A6E46D0008667AF /* Operators.swift in Sources */,
+				7572EF9B1A6E46D0008667AF /* Engine.swift in Sources */,
+				7572EF9F1A6E46D0008667AF /* Utilities.swift in Sources */,
+				7572EFA11A6E46D0008667AF /* Dice.swift in Sources */,
+				7572EF9D1A6E46D0008667AF /* Termination.swift in Sources */,
+				7572EFA01A6E46D0008667AF /* Stats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7572EF6F1A6E4668008667AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7572EF7B1A6E4668008667AF /* MendelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7572EF761A6E4668008667AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7572EF671A6E4668008667AF /* Mendel */;
+			targetProxy = 7572EF751A6E4668008667AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7572EF7C1A6E4668008667AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7572EF7D1A6E4668008667AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7572EF7F1A6E4668008667AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mendel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7572EF801A6E4668008667AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mendel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7572EF821A6E4668008667AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MendelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7572EF831A6E4668008667AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MendelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7572EF621A6E4668008667AF /* Build configuration list for PBXProject "Mendel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7572EF7C1A6E4668008667AF /* Debug */,
+				7572EF7D1A6E4668008667AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7572EF7E1A6E4668008667AF /* Build configuration list for PBXNativeTarget "Mendel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7572EF7F1A6E4668008667AF /* Debug */,
+				7572EF801A6E4668008667AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7572EF811A6E4668008667AF /* Build configuration list for PBXNativeTarget "MendelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7572EF821A6E4668008667AF /* Debug */,
+				7572EF831A6E4668008667AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7572EF5F1A6E4668008667AF /* Project object */;
+}
