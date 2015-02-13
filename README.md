@@ -81,4 +81,4 @@ public protocol Engine {
 }
 ```
 
-Hat tips to [Watchmaker](http://watchmaker.uncommons.org) and [Nacho Sotos](https://github.com/NachoSoto/)' [swift-genetics](https://github.com/NachoSoto/swift-genetics)
+Hat tip to [Watchmaker](http://watchmaker.uncommons.org) and [Nacho Sotos](https://github.com/NachoSoto/)' [swift-genetics](https://github.com/NachoSoto/swift-genetics)
