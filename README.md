@@ -9,7 +9,7 @@ This started out as an exercise in Swift and Functional Programming, but quickly
 ##Intro
 The framework provides an `Engine` protocol, describing the necessary interface for evolutionary/genetic computation using functions. Individual instantiation, population evaluation, selection, genetic operators (like mutation and crossover) and even termination conditions are all described as functions. This allows you to use techniques such as partial application and function composition to a great effect.
 
-Here's a video showing the sample application that's build on top of Mendel in action.
+Here's a [video showing the sample application](https://www.dropbox.com/s/pn8maleovy61s9c/Mendel%20Demo%20Video.mp4?dl=0) that's build on top of Mendel in action.
 
 ##Canned Functions
 Mendel provides a number of canned implementations for some of those functions, see: 
