@@ -32,7 +32,7 @@ public class ImageMatchingLab {
             selection: Selections.RouletteWheel,
             //Mutation is at 100%, since we control the by-gene probabilities
             //at the individual level
-            op: Operators.Parallel(batchSize: 10)(Operators.Crossover(0.5) >>> Operators.Mutation(1))
+            op: Operators.Parallel(batchSize: 10)(op: Operators.Crossover(0.5) >>> Operators.Mutation(1))
         )
         self.engine = engine
         
@@ -130,9 +130,9 @@ extension Painting : Crossoverable {
         let wordA = parent1.genes
         let wordB = parent2.genes
         
-        var count = countElements(wordA)
-        var p1 = Int(arc4random_uniform(UInt32(count)))
-        var p2 = Int(arc4random_uniform(UInt32(count)))
+        let c = count(wordA)
+        var p1 = Int(arc4random_uniform(UInt32(c)))
+        var p2 = Int(arc4random_uniform(UInt32(c)))
         if (p1 > p2) {
             swap(&p1, &p2)
         }

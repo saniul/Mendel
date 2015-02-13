@@ -29,7 +29,7 @@ class WordMatchingLab {
         
         self.targetWord = targetWord
         
-        let length = countElements(targetWord)
+        let length = count(targetWord)
         
         let engine = SimpleEngine<String>(
             factory: { return String.arbitraryOfLength(length) },
@@ -38,7 +38,7 @@ class WordMatchingLab {
             },
             fitnessKind: FitnessKind.Inverted,
             selection: Selections.RouletteWheel,
-            op: Operators.Parallel(batchSize: 10)(Operators.Crossover(0.4) >>> Operators.Mutation(1))
+            op: Operators.Parallel(batchSize: 10)(op: Operators.Crossover(0.4) >>> Operators.Mutation(1))
         )
         
         engine.config.size = 100
@@ -103,16 +103,16 @@ extension String : Crossoverable {
         let wordA = parent1.characters
         let wordB = parent2.characters
         
-        var countA = countElements(wordA)
-        var countB = countElements(wordB)
+        var countA = count(wordA)
+        var countB = count(wordB)
         
         if countA != countB {
             println("\(countA)!=\(countB)")
         }
         
-        let count = countA
-        var p1 = Int(arc4random_uniform(UInt32(count)))
-        var p2 = Int(arc4random_uniform(UInt32(count)))
+        let c = countA
+        var p1 = Int(arc4random_uniform(UInt32(c)))
+        var p2 = Int(arc4random_uniform(UInt32(c)))
         if (p1 > p2) {
             swap(&p1, &p2)
         }

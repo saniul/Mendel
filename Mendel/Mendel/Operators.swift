@@ -125,9 +125,9 @@ public struct Operators {
 }
 
 public protocol Mutatable : IndividualType {
-    class func mutate(individual: Self) -> Self
+    static func mutate(individual: Self) -> Self
 }
 
 public protocol Crossoverable : IndividualType {
-    class func cross(parent1: Self, _ parent2: Self) -> [Self]
+    static func cross(parent1: Self, _ parent2: Self) -> [Self]
 }

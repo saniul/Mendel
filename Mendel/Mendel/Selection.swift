@@ -70,7 +70,7 @@ public struct Selections {
             return fitnessKind.adjustedFitness(score.fitness)
         }
         
-        let sum = adjustedFitnesses.reduce(0, (+))
+        let sum = adjustedFitnesses.reduce(0, combine: (+))
         
         let startOffset = Double(random(from: 0.0, to: 1.0))
         
