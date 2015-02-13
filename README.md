@@ -4,8 +4,6 @@ Mendel - Swift miliframework for implementing evolutionary/genetic algorithms. O
 
 ![Logo](logo@2x.png)
 
-Inspired by: http://chriscummins.cc/s/genetics/ and the [Functional Programming in Swift](http://www.objc.io/books/) book.
-
 This started out as an exercise in Swift and Functional Programming, but quickly turned into something bigger.
 
 ##Intro
@@ -82,4 +80,5 @@ public protocol Engine {
 }
 ```
 
-Hat tip to [Watchmaker](http://watchmaker.uncommons.org) and [Nacho Sotos](https://github.com/NachoSoto/)' [swift-genetics](https://github.com/NachoSoto/swift-genetics)
+Inspired by http://chriscummins.cc/s/genetics/ and the [Functional Programming in Swift](http://www.objc.io/books/) book.
+Hat tip to [Watchmaker](http://watchmaker.uncommons.org) and [Nacho Sotos](https://github.com/NachoSoto/)' [swift-genetics](https://github.com/NachoSoto/swift-genetics).
