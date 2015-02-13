@@ -1,10 +1,11 @@
 # Mendel
 
-Mendel - Swift miliframework for implementing evolutionary/genetic algorithms.
+Mendel - Swift miliframework for implementing evolutionary/genetic algorithms. Or, you know, [Gregor Mendel](http://en.wikipedia.org/wiki/Gregor_Mendel).
 
 ![Logo](logo@2x.png)
 
-Inspired by: http://chriscummins.cc/s/genetics/ and the [Functional Programming in Swift](http://www.objc.io/books/) book
+Inspired by: http://chriscummins.cc/s/genetics/ and the [Functional Programming in Swift](http://www.objc.io/books/) book.
+
 This started out as an exercise in Swift and Functional Programming, but quickly turned into something bigger.
 
 ##Intro
