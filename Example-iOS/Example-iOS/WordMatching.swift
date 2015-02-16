@@ -38,7 +38,7 @@ class WordMatchingLab {
             },
             fitnessKind: FitnessKind.Inverted,
             selection: Selections.RouletteWheel,
-            op: Operators.Parallel(batchSize: 10)(op: Operators.Crossover(0.4) >>> Operators.Mutation(1))
+            op: parallel(batchSize: 10)(op: crossover(0.4) >>> mutation(1))
         )
         
         engine.config.size = 100
