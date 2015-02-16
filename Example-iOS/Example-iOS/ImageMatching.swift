@@ -32,7 +32,7 @@ public class ImageMatchingLab {
             selection: Selections.RouletteWheel,
             //Mutation is at 100%, since we control the by-gene probabilities
             //at the individual level
-            op: Operators.Parallel(batchSize: 10)(op: Operators.Crossover(0.5) >>> Operators.Mutation(1))
+            op: parallel(batchSize: 10)(op: crossover(0.5) >>> mutation(1))
         )
         self.engine = engine
         

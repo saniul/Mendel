@@ -6,8 +6,7 @@
 
 import Foundation
 
-//The compose operator provides function composition.
-func >>> <A, B, C>(f: A -> B, g: B -> C) -> A -> C {
+public func >>> <A, B, C>(f: A -> B, g: B -> C) -> A -> C {
     return { x in g(f(x)) }
 }
 
