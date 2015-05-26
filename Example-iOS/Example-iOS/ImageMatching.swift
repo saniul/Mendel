@@ -261,8 +261,8 @@ private func distanceFromTargetImageAtURL(imageURL: NSURL) -> (Painting, [Painti
     
     let colorSpace: CGColorSpace = CGColorSpaceCreateDeviceRGB()
     let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.NoneSkipLast.rawValue)
-    let width = targetImage.width
-    let height = targetImage.height
+    let width  = Int( targetImage.width )
+    let height = Int(  targetImage.height )
     let bytesPerRow = width * 4
     
     let length = Int(width)*Int(height)
@@ -283,9 +283,9 @@ private func distanceFromTargetImageData(targetData: UnsafeMutablePointer<Pixel>
         let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.NoneSkipLast.rawValue)
         let width = Int(size.width)
         let height = Int(size.height)
-        let bytesPerRow = UInt(width) * 4
+        let bytesPerRow = Int(width) * 4
         
-        let context = CGBitmapContextCreate(nil, UInt(width), UInt(height), 8, bytesPerRow, colorSpace, bitmapInfo)
+        let context = CGBitmapContextCreate(nil, width, height, 8, bytesPerRow, colorSpace, bitmapInfo)
 //        CGContextSetShouldAntialias(context, false);
         painting.drawInContext(context, size: size)
         
@@ -312,9 +312,9 @@ extension Painting {
     func imageOfSize(size: CGSize) -> CGImageRef {
         let colorSpace: CGColorSpace = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.NoneSkipLast.rawValue)
-        let width = UInt(size.width)
-        let height = UInt(size.height)
-        let bytesPerRow = UInt(width) * 4
+        let width = Int(size.width)
+        let height = Int(size.height)
+        let bytesPerRow = Int(width) * 4
         let context = CGBitmapContextCreate(nil, width, height, 8, bytesPerRow, colorSpace, bitmapInfo)
 //        CGContextSetShouldAntialias(context, false);
         self.drawInContext(context, size: size)
@@ -382,11 +382,11 @@ extension CGImageRef {
         return CGSize(width: CGFloat(CGImageGetWidth(self)), height: CGFloat(CGImageGetHeight(self)))
     }
     
-    var height: UInt {
+    var height: Int {
         return CGImageGetHeight(self)
     }
     
-    var width: UInt {
+    var width: Int {
         return CGImageGetWidth(self)
     }
 }

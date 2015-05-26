@@ -168,8 +168,8 @@ public func evaluatePopulation<I : IndividualType>(population: [I], withStride s
     let group = dispatch_group_create()
     
     //TODO: write this in a more swifty way
-    let iterations = UInt(population.count/stride)
-    dispatch_apply(iterations, queue) { idx in
+    let iterations = Int(population.count/stride)
+    func evaluatePopulationClosure(idx: Int) -> (Void) {
         var j = Int(idx) * stride
         let j_stop = j + stride
         do {
@@ -183,7 +183,7 @@ public func evaluatePopulation<I : IndividualType>(population: [I], withStride s
             j++
         } while (j < j_stop);
     }
-    
+    dispatch_apply(iterations, queue, evaluatePopulationClosure)
     //handle the remainder
     dispatch_group_enter(group)
     dispatch_async(queue) {

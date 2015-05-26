@@ -60,7 +60,7 @@ public struct Operators {
         return result
     }
     
-    public static func Parallel<I : IndividualType>(batchSize str:UInt)(op: [I]->[I])(pop:[I])->[I] {
+    public static func Parallel<I : IndividualType>(batchSize str:Int)(op: [I]->[I])(pop:[I])->[I] {
         //TODO: parametrize shuffling
         let pop = shuffle(pop)
         
@@ -73,10 +73,11 @@ public struct Operators {
         var results = [I]()
         results.reserveCapacity(pop.count)
         
-        let iterations = UInt(pop.count)/str
+        let iterations = Int(pop.count)/str
         
         //TODO: write this in a more swifty way
-        dispatch_apply(iterations, queue) { idx in
+        
+        func parallelClosure(idx: Int) -> (Void) {
             var j = Int(idx * str)
             let j_stop = j + Int(str)
             dispatch_group_enter(group)
@@ -87,6 +88,7 @@ public struct Operators {
             }
         }
         
+        dispatch_apply(iterations, queue, parallelClosure)
         //handle the remainder
         dispatch_group_enter(group)
         dispatch_async(queue) {
