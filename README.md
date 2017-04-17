@@ -6,18 +6,18 @@ Mendel - Swift miliframework for implementing evolutionary/genetic algorithms. O
 
 This started out as an exercise in Swift and Functional Programming, but quickly turned into something bigger.
 
-##Intro
+## Intro
 The framework provides an `Engine` protocol, describing the necessary interface for evolutionary/genetic computation using functions. Individual instantiation, population evaluation, selection, genetic operators (like mutation and crossover) and even termination conditions are all described as functions. This allows you to use techniques such as partial application and function composition to a great effect.
 
 Here's a [video showing the sample application](https://www.dropbox.com/s/pn8maleovy61s9c/Mendel%20Demo%20Video.mp4?dl=0) that's build on top of Mendel in action.
 
-##Canned Functions
+## Canned Functions
 Mendel provides a number of canned implementations for some of those functions, see: 
 * [`Selections`](Mendel/Mendel/Selection.swift) for individual selection functions, such as `RouletteWheel` and `StochasticUniversalSampling`
 * [`Operators`](Mendel/Mendel/Operators.swift) for genetic operators, such as `Mutation` and `Crossover`
 * [`TerminationConditions`](Mendel/Mendel/Termination.swift) for termination conditions, such as terminating after a number of iterations (`NumberOfIterations`) or terminating when a given fitness threshold is reached (`FitnessThreshold`)
 
-##More on Genetic Operators
+## More on Genetic Operators
 Genetic Operators can be easily piped using the `>>>` swift operator (which wraps the `Pipe` genetic operator). E.g. if you want to perform a crossover with probability 0.1 and then a mutation with probability 0.5, you can just pass `Crossover(0.1) >>> Mutation(0.5)` as your genetic operator.
 
 The `Split` operator lets you split the genetic operator flow into two paths. E.g., if you want to perform a crossover(p=0.1) only on 30% of the population and a mutation(p=0.5) on the other 70% you can do `Split(0.3, Crossover(0.1), Mutation(0.5))`.
@@ -26,7 +26,7 @@ Using `Pipe` and `Split` together lets you build complex evolution schemes easil
 
 Additionally, there's a `Parallel` operator, which partitions the population in batches of `batchSize` and applies a genetic operator to those batches concurrently, returning only after all batches are processed.
 
-##Simple Engine
+## Simple Engine
 The framework provides a [`SimpleEngine`](https://github.com/saniul/Mendel/blob/master/Mendel/Mendel/Engine.swift#L217) class which implements the `Engine` protocol described below. It's a concrete implementation of a simple generational evolution engine and can be used out of the box. The two examples in the sample app were built using `SimpleEngine`.
 
 ```swift
